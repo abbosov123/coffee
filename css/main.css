@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/fraunces-v24-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/fraunces-v24-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fraunces';
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* HERO */
+
+.hero {
+}
+
+.wrapper {
+    background-color: grey;
+    padding: 200px 0 200px 85px;
+    border-radius: 9px;
+}
+
+.hero__wrapper {
+    background-color: lightgreen;
+    padding: 117px 0 116px 84px;
+}
+
+.hero__left-side {
+    /* max-width: 493px; */
+}
+
+.title {
+    font-family: 'Fraunces';
+    color: #FEFCF7;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.hero__title {
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.description {
+    max-width: 445px;
+}
+
+.hero__description {
+}
+
+.button {
+    min-width: 200px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    background: none;
+    text-decoration: none;
+    color: #FEFCF7;
+    background-color: #fff;
+    background: #0E8784;
+    border-radius: 6px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding: 15px 31px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+.button:active {
+    opacity: 0.6;
+}
+
+.hero__button {
+    background-color: #FEFCF7;
+    color: #0E8784;
+    border: 5px solid #0E8784;
+}
+
+.button--big {
+    min-width: 250px;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 18px 35px;
+}
+
+.button--small{
+    min-width: 180px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 25px;
+}
+
+header {
+    background-color: red;
+}
+
+footer {
+    background-color: green;
+}
+
+
+/* Steps */
+.steps {
+}
+
+.steps__container {
+}
+.steps__wrapper {
+}
+
+.steps__heading {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.steps__list {
+    background-color: lightgreen;
+    display: flex;
+    align-items: flex-start;
+}
+
+.steps__item {
+    position: relative;
+    padding-top: 98px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.steps__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: #FEFCF7;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.steps__item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: red;
+    transform: translate(0, calc(31px / 2));
+}
+
+.steps__item:last-child::after {
+    display: none;
+}
+
+.spets__item-wrapper {
+    max-width: 285px;
+}
+
+.steps__numeric {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.steps__inner-heading {
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.steps__descriction {
+    font-family: "Roboto";
+}
